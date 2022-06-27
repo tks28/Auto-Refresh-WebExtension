@@ -1,0 +1,23 @@
+{
+
+    "description": "Automatic refresh the current page at a time interval",
+    "manifest_version": 2,
+    "name": "Auto-Refresh",
+    "version": 1.0,
+    "homepage_url": "https://github.com/tks28/Auto-Refresh-WebExtension",
+
+    "icons":{
+        "48": "images/Refresh-icon-48.png",
+        "128": "images/Refresh-icon-128.png"
+    },
+
+    "browser_action": {
+        "default_popup": "autoRefresh.html",
+        "default_icon": "images/Refresh-icon.png"
+    },
+
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    }
+}
