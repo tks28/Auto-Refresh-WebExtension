@@ -2,11 +2,24 @@
     float: left
 }
 
+#div2 {
+	float: left
+}
+
 #start_button {
     background-image: url(images/start-button.png);
-	background-size: 50px 50px;
-	height: 50px;
-	width: 50px;
+	background-size: 60px 60px;
 	border: none;
+	height: 60px;
+	width: 60px;
 	margin-right: 10px;
+}
+
+#sec {
+	width: 30px;
+	margin-bottom: 20px;
+}
+
+#counter {
+	width: 30px;
 }
