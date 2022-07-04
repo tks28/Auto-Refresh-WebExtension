@@ -3,7 +3,7 @@
     "description": "Automatic refresh the current page at a time interval",
     "manifest_version": 2,
     "name": "Auto-Refresh",
-    "version": 1.0,
+    "version": "1.0",
     "homepage_url": "https://github.com/tks28/Auto-Refresh-WebExtension",
 
     "icons":{
@@ -19,5 +19,11 @@
     "background": {
         "scripts": ["background.js"],
         "persistent": false
-    }
+    },
+
+    "permissions": ["activeTab",
+        "storage",
+        "tabs",
+        "http://*/",
+        "https://*/"]
 }
