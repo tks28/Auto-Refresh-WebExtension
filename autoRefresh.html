@@ -8,17 +8,29 @@
     </head>
 
     <body>
-        <div id="div1">
-            <button id="start_button"></button>
-        </div>
-        <div class="div2">
-            <form>
-                <label>Seconds :<input id="sec" type="number" value=0 min=0></label><br>
-                <label>Counter :<input id="counter" type="number" value="1" min="1"></label>
-            </form>
-        </div>
+        <table>
+            <tr>
+                <td>
+                    <div id="div1">
+                        <button id="start_button"></button><br>
+                    </div>
+                </td>
+                <td>
+                    <div id="div2">
+                        <form>
+                            <label>Seconds :<input id="sec" type="number" value=0 min=1></label><br>
+                            <label>Counter :<input id="counter" type="number" value="1" min="1"></label>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                        <p>Refresh left: </p>
+                        <p id="counting">0</p>
+                </td>
+            </tr>
+        </table>
     </body>
     <script src="autoRefresh.js"></script>
-
-
 </html>

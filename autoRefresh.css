@@ -1,10 +1,11 @@
 #div1 {
-    float: left
+    float: left;
 }
 
 #div2 {
-	float: left
+	float: right;
 }
+
 
 #start_button {
     background-image: url(images/start-button.png);
@@ -13,7 +14,6 @@
 	height: 60px;
 	width: 60px;
 	margin-right: 10px;
-	display: block;
 }
 
 #sec {
@@ -23,4 +23,9 @@
 
 #counter {
 	width: 30px;
+}
+
+td {
+	text-align: center;
+	vertical-align: middle;
 }
