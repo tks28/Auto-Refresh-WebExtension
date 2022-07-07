@@ -50,7 +50,7 @@ function button_clickHandler(e) {
 function countdown(seconds) {
     var s = seconds;
     // run at a interval time
-    var x = setInterval((function() {
+    var inter = setInterval((function() {
         setInterval(function() {
           if(buttonState === true && counter > 0) { 
             // display the seconds remaining on the badge of the extension
@@ -67,7 +67,7 @@ function countdown(seconds) {
           }
           else { 
             // if the counter reaches 0
-            clearInterval(x);
+            clearInterval(inter);
             browser.browserAction.setBadgeText({text:""});
             alert('The extension have already refresh ' + count.value + ' times');
           }

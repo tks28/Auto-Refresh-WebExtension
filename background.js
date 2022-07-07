@@ -5,9 +5,9 @@ browser.runtime.onMessage.addListener( function(request,sender,sendResponse) {
         let querying = browser.tabs.query({currentWindow: true, active:true});
         querying.then(function(tab){
             //store the code
-            var code = 'window.location.reload(true);';
+            var codeReload = 'window.location.reload(true);';
             //execute the code on the current tab
-            browser.tabs.executeScript(tab.id, {code: code});
+            browser.tabs.executeScript(tab.id, {code: codeReload});
         }, null);
     }
 });
